@@ -1,0 +1,75 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+[data-theme] {
+  background: oklch(var(--b2));
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.block.text-2xl.mb-2 {
+  text-align: center;
+  color: #c955b6;
+  border-style: solid;
+  border-color: #906ba2;
+  background-color: #d7bdff;
+  border-radius: 5px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.faerytext {
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+  color: #a06fc0;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.faeryButton {
+  background-color: #ffb3fd;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-style: solid;
+  border-color: #773175;
+  background-color: #ffb3fd;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn {
+  @apply shadow-md;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
